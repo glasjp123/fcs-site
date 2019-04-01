@@ -12,6 +12,7 @@ body {
 	top: 0;
 	left: 0;
 	z-index: 1;
+	border-bottom: .5px solid grey;
 }
 
 .nav-bar__list {
@@ -26,6 +27,7 @@ body {
 	font-size: 20px;
 	display: inline;
 	margin-right: 5%;
+	text-shadow: .5px 1px #062C8D;	
 }
 
 .nav-bar__item__link { 
@@ -39,14 +41,17 @@ body {
 	top: 2.5%;
 	left: 7.5%;
 	height: 20%;
-	border: 2px solid grey;
+	border: .7px solid black;
+	border-radius: .2% / .5%;
+}
 
-	/*border-radius: 2% / 5%;*/
+.front-page {
+	height: 450px;
 }
 
 .page-top {
 	position: relative;
-	top: 150px;
+	top: 250px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -65,8 +70,8 @@ body {
 	text-decoration: none;
 	margin-top: 375px;
 	position: absolute;
-	left: 225px;
-	top: 200px;
+	left: 280px;
+	top: 180px;
 /*	right: 0px;
 	bottom: 0px;*/
 }
@@ -81,15 +86,18 @@ body {
 .top-quote {
 	font-family: 'EB Garamond', serif;
 	position: absolute;
-	left: 25px;
-	top: 150px;
+	font-size: 35px;	
+	left: 65px;
+	top: 50px;
+	text-shadow: .5px .5px pink;	
 }
 
 .sample-image {
 	height: 500px;
 	width: auto;
 	position: relative;
-	left: 275px;
+	top: -100px;	
+	left: 310px;
 }
 
 .body {
@@ -97,14 +105,29 @@ body {
 	font-family: 'EB Garamond', serif;
 	z-index: -1;
 	position: relative;
-	top: 45px;
+	top: 50px;
+	margin-top: 100px;
+	padding-bottom: 400px;
 }
 
+.divide {
+	margin-top: 300px;
+	position: relative;
+	/*top: 150px;*/
+}
+
+.anchor{
+  display: block;
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
+}
 
 .body-section-title {
 	text-align: center;
 	margin-top: 10%;
 	margin-bottom: 5%;
+	/*border-top: .1px solid rgb(252, 250, 242);*/
 }
 
 .body-section-text {
@@ -122,4 +145,19 @@ body {
 .team-section{
 	position: relative;
 	left: 0;
+}
+
+.footer {
+	background: linear-gradient(to right, #1f84e2, #062C8D);
+	width: 150%;
+	height: 60px;
+	position: absolute;
+	bottom: 0;
+	left: -10px;
+}
+
+.footer-text {
+	position: relative;
+	top: 20px;
+	left: 25px;
 }
